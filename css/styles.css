@@ -139,12 +139,14 @@ a {
     float: left;
     width: 125px;
     margin-bottom: 0px;
+    margin-right: 2rem;
     display: block;
 }
 
 .right-col-center {
     overflow: hidden;
     text-align: center;
+    display: flex; 
 }
 .right-col-center p {
     margin: 0px;
