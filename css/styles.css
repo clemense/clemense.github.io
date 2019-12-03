@@ -1,0 +1,238 @@
+body {
+  background: #f5f5f5;
+  color: #202020;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.link_color {
+    color: #D3A61F;
+}
+
+a {
+    color: #D3A61F;
+/*    font-weight: 500;*/
+    text-decoration: none;
+}
+/*
+a:hover {
+    color: #eec643;
+    color: #f4da40
+}
+*/
+/*
+a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%; 
+}
+*/
+
+.nav {
+  margin-top: 5rem;
+}
+
+.nav-item a {
+  color: #797979;
+  text-decoration: none;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  color: #4d4a4a;
+  border: none;
+}
+
+.hero {
+  color: #363636;
+  margin-top: 3rem;
+}
+
+.hero h3 {
+  font-family: "Edelsans", sans-serif;
+  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 0px;
+}
+
+.hero h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 200;
+}
+
+.grid-demo-col {
+  background: #e4e4e4;
+}
+
+.header {
+  font-weight: 200;
+}
+
+.content {
+  font-size: 1.8rem;
+}
+
+.card {
+  background: #FAFAFA;
+}
+
+/* === Publication === */
+/*
+.publications div {
+    margin: 0;
+}
+*/
+.publication div {
+    margin: 0;
+}
+
+.publication {
+    margin-bottom: 3rem;
+}
+
+/*
+.publication a {
+    color: #1D1F2A;
+    text-decoration: underline overline;
+}
+*/
+
+.publication h5 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+/*    font-weight: 400;*/
+    color: #205C40;
+/*    background-color: #1f4a37;*/
+/*    color: #205C40;  Pantone 554 C */
+}
+
+.bibtex {
+    display: none; 
+    font-family: monospace;
+}
+
+.abstract {
+    display: none;
+}
+
+.booktitle {
+    font-style: italic;
+}
+
+.left-col-image-150px {
+    float: left;
+    width: 125px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.right-col-center {
+    overflow: hidden;
+    text-align: center;
+}
+.right-col-center p {
+    margin: 0px;
+}
+
+.right-col-rest {
+    overflow: hidden;
+}
+.hero-text {
+    margin-top: 1rem;
+    display: inline-block;
+    line-height: 22px;
+} 
+
+.col-image {
+    float: left;
+    width: 120px;
+/*    min-widht: 150px;*/
+    min-height: 110px;
+    padding-top: 10px;
+/*    margin-left: 10px;*/
+/*    border: 2px dashed #00f;*/
+}
+.col-image img {
+    display:block;
+/*    margin:auto;*/
+}
+.col-rest {
+    overflow: hidden;
+    min-height: 110px;
+/*    border: 2px dashed #f0f;*/
+}
+
+/*
+.publication image {
+  float:left;
+  width:240px;
+  width:18%;
+  padding: 0px 5px;
+  margin-left: -19px;
+  margin-right: 19px;
+  clear:both;
+  position:relative;
+  text-align: justify;  
+}
+*/
+
+.string {
+  color: #02C1A7;
+}
+.special {
+  color: #AC2EC5;
+}
+.global {
+  color: #db9114;
+}
+.method {
+  color: #00A2CD;
+}
+.comment {
+  color: #989898;
+}
+
+/* === Footer === */
+footer {
+  margin: 50px;
+}
+
+#footer-link {
+  font-size: 16px;
+  color: #111111;
+  text-decoration: none;
+}
+
+#footer-made, #footer-name, #footer-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+#footer-name {
+  font-weight: 700;
+}
+
+#footer-logo {
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
+}

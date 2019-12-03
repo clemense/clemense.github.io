@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<script>
+function togglediv(id) {
+    var div = document.getElementById(id);
+    div.style.display = (div.style.display == "none" || div.style.display == "") ? "block" : "none";
+}
+</script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal webpage.">
+        <meta name="author" content="Clemens Eppner">
+        
+        <title>Clemens Eppner</title>
+
+        <!-- Begin favicon settings -->
+        <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="favicon/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="favicon/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="favicon/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+        <link rel="apple-touch-icon" href="favicon/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
+        <meta name="msapplication-config" content="favicon/browserconfig.xml">
+        <!-- End -->
+
+        <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="./dist/wing.css" />
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+        <!-- Google Analytics -->
+        
+        <base target="_blank">
+    </head>
+    
+    <body>
+        <section class="hero container">
+            <div>
+              <div class="left-col-image-150px">
+                <img src="./img/delauney.png" height="125">
+              </div>
+              <div class="right-col-center">
+		      <span class="center"><h3 class="left">Clemens Eppner</h3>
+			      <p><span class="link_color">ceppner at nvidia dot com</span></p></span>
+              </div>
+              <div class="right-col-rest"></div>
+              <div class="hero-text">
+                <p align="justify">I am a Postdoctoral Researcher in the <a href="https://blogs.nvidia.com/blog/2019/01/11/nvidia-seattle-ai-robotics-research-lab/">Seattle Robotics Lab</a> at <a href="https://www.nvidia.com/en-us/research/">NVIDIA Research</a> led by <a href="http://homes.cs.washington.edu/~fox/">Dieter Fox</a>. I am mainly interested in problems that revolve around grasping and manipulation, including aspects of planning, control, and perception. Although this domain may seem specific, I believe that the hybrid nature of grasping and manipulation is echoed in a wide range of decision making problems. Furthermore, I consider robotics to be a fundamentally empirical enterprise. Building systems that alter our physical world is therefore an integral part of my work.</p>
+                <p align="justify">Before joining NVIDIA, I received my PhD at the <a href="http://www.robotics.tu-berlin.de">Robotics and Biology Lab</a> at TU Berlin under the supervision of <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock">Oliver Brock</a>. I also enjoyed a research stay at <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>'s <a href="http://rll.berkeley.edu/">Robot Learning Lab</a> at UC Berkeley.</p>
+                <p>[<a href="https://scholar.google.com/citations?user=zMw7PF8AAAAJ">Google Scholar</a>]</p>
+              </div>
+            </div>
+        </section>
+        
+        <section class="container center">
+            <div>
+                <div>
+                  <h3 class="header">Preprints</h3>
+                  
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/deng2019selfsupervised.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Self-supervised 6D Object Pose Estimation for Robot Manipulation</h5>
+                    <div class="authors">Xinke Deng, Yu Xiang, Arsalan Mousavian, <b>Clemens Eppner</b>, Timothy Bretl and Dieter Fox</div>
+                    <div class="booktitle"> October 2019.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('deng2019selfsupervised_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('deng2019selfsupervised_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1909.10159">PDF</a>]  [<a href="https://youtu.be/W1Y0Mmh1Gd8">Video</a>]</div>
+                    <div class="bibtex" id="deng2019selfsupervised_bibtex"><br />@inproceedings{deng2019selfsupervised,<br />&nbsp;&nbsp; title = {Self-supervised 6D Object Pose Estimation for Robot Manipulation},<br />&nbsp;&nbsp; author = {Deng, Xinke and Xiang, Yu and Mousavian, Arsalan and Eppner, Clemens and Bretl, Timothy and Fox, Dieter},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="deng2019selfsupervised_abstract">To teach robots skills, it is crucial to obtain data with supervision. Since annotating real world data is time-consuming and expensive, enabling robots to learn in a self-supervised way is important. In this work, we introduce a robot system for self-supervised 6D object pose estimation. Starting from modules trained in simulation, our system is able to label real world images with accurate 6D object poses for self-supervised learning. In addition, the robot interacts with objects in the environment to change the object configuration by grasping or pushing objects. In this way, our system is able to continuously collect data and improve its pose estimation modules. We show that the self-supervised learning improves object segmentation and 6D pose estimation performance, and consequently enables the system to grasp objects more reliably.</div>
+                </div>
+            </div>
+        
+                </div>
+
+                <div>
+                  <h3 class="header">Refereed Conference &amp; Journal Publications</h3>
+                  
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/paxton2019logicaldynamicalsystems.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Representing Robot Task Plans as Robust Logical-Dynamical Systems</h5>
+                    <div class="authors">Christopher Paxton, Nathan Ratliff, <b>Clemens Eppner</b> and Dieter Fox</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Macau, China. November 2019.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('paxton2019logicaldynamicalsystems_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('paxton2019logicaldynamicalsystems_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1908.01896.pdf">PDF</a>] </div>
+                    <div class="bibtex" id="paxton2019logicaldynamicalsystems_bibtex"><br />@inproceedings{paxton2019logicaldynamicalsystems,<br />&nbsp;&nbsp; title = {Representing Robot Task Plans as Robust Logical-Dynamical Systems},<br />&nbsp;&nbsp; author = {Christopher Paxton and Nathan Ratliff and Clemens Eppner and Dieter Fox},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="paxton2019logicaldynamicalsystems_abstract">It is difficult to create robust, reusable, and reactive behaviors for robots that can be easily extended and combined. Frameworks such as Behavior Trees are flexible but difficult to characterize, especially when designing reactions and recovery behaviors to consistently converge to a desired goal condition. We propose a framework which we call Robust Logical-Dynamical Systems (RLDS), which combines the advantages of task representations like behavior trees with theoretical guarantees on performance. RLDS can also be constructed automatically from simple sequential task plans and will still achieve robust, reactive behavior in dynamic real-world environments. In this work, we describe both our proposed framework and a case study on a simple household manipulation task, with examples for how specific pieces can be implemented to achieve robust behavior. Finally, we show how in the context of these manipulation tasks, a combination of an RLDS with planning can achieve better results under adversarial conditions.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2019graspsampling.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>A Billion Ways to Grasp: An Evaluation of Grasp Sampling Schemes on a Dense, Physics-Based Grasp Data Set</h5>
+                    <div class="authors"><b>Clemens Eppner</b>, Arsalan Mousavian and Dieter Fox</div>
+                    <div class="booktitle">Springer Proceedings of the 19th International Symposium of Robotics Research (ISRR). Hanoi, Vietnam. October 2019.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2019graspsampling_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2019graspsampling_bibtex'); return false;">BibTex</a>] [<a href="">PDF</a>] </div>
+                    <div class="bibtex" id="eppner2019graspsampling_bibtex"><br />@inproceedings{eppner2019graspsampling,<br />&nbsp;&nbsp; title = {A Billion Ways to Grasp: An Evaluation of Grasp Sampling Schemes on a Dense, Physics-Based Grasp Data Set},<br />&nbsp;&nbsp; author = {Clemens Eppner and Arsalan Mousavian and Dieter Fox},<br />&nbsp;&nbsp; booktitle = {Springer Proceedings of the 19th International Symposium of Robotics Research (ISRR)},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2019graspsampling_abstract"></div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/mousavian2019graspnet.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>6-DOF GraspNet: Variational Grasp Generation for Object Manipulation</h5>
+                    <div class="authors">Arsalan Mousavian, <b>Clemens Eppner</b> and Dieter Fox</div>
+                    <div class="booktitle">Proceedings of the International Conference on Computer Vision (ICCV). Seoul, Korea. October 2019.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('mousavian2019graspnet_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('mousavian2019graspnet_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1905.10520">PDF</a>]  [<a href="https://www.youtube.com/watch?v=y5EJXeEiB1o">Video</a>] [<a href="https://research.nvidia.com/publication/2019-10_6-DOF-GraspNet%3A-Variational">Website</a>]</div>
+                    <div class="bibtex" id="mousavian2019graspnet_bibtex"><br />@inproceedings{mousavian2019graspnet,<br />&nbsp;&nbsp; title = {6-DOF GraspNet: Variational Grasp Generation for Object Manipulation},<br />&nbsp;&nbsp; author = {Arsalan Mousavian and Clemens Eppner and Dieter Fox},<br />&nbsp;&nbsp; booktitle = {Proceedings of the International Conference on Computer Vision (ICCV)},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="mousavian2019graspnet_abstract">Generating grasp poses is a crucial component for any robot object manipulation task. In this work, we formulate the problem of grasp generation as sampling a set of grasps using a variational autoencoder and assess and refine the sampled grasps using a grasp evaluator model. Both Grasp Sampler and Grasp Refinement networks take 3D point clouds observed by a depth camera as input. We evaluate our approach in simulation and real-world robot experiments. Our approach achieves 88% success rate on various commonly used objects with diverse appearances, scales, and weights. Our model is trained purely in simulation and works in the real world without any extra steps.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/martin2018dataset.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>The RBO Dataset of Articulated Objects and Interactions</h5>
+                    <div class="authors">Roberto Martín-Martín*, <b>Clemens Eppner</b>* and Oliver Brock</div>
+                    <div class="booktitle">The International Journal of Robotics Research. SAGE Publications. August 2019.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('martin2018dataset_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('martin2018dataset_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1806.06465.pdf">PDF</a>]  [<a href="https://tu-rbo.github.io/articulated-objects/">Website</a>]</div>
+                    <div class="bibtex" id="martin2018dataset_bibtex"><br />@article{martin2018dataset,<br />&nbsp;&nbsp; title = {The RBO Dataset of Articulated Objects and Interactions},<br />&nbsp;&nbsp; author = {Roberto Mart\'{\i}n-Mart\'{\i}n and Clemens Eppner and Brock, Oliver},<br />&nbsp;&nbsp; journal = {The International Journal of Robotics Research},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="martin2018dataset_abstract">We present a dataset with models of 14 articulated objects commonly found in human environments and with RGB-D video sequences and wrenches recorded of human interactions with them. The 358 interaction sequences total 67 minutes of human manipulation under varying experimental conditions (type of interaction, lighting, perspective, and background). Each interaction with an object is annotated with the ground-truth poses of its rigid parts and the kinematic state obtained by a motion-capture system. For a subset of 78 sequences (25 minutes), we also measured the interaction wrenches. The object models contain textured three-dimensional triangle meshes of each link and their motion constraints. We provide Python scripts to download and visualize the data. The data are available at https://turbo.github.io/articulated-objects/ and hosted at https://zenodo.org/record/1036660/.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2018physics.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Physics-Based Selection of Informative Actions for Interactive Perception</h5>
+                    <div class="authors"><b>Clemens Eppner</b>*, Roberto Martín-Martín* and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Brisbane, Australia. May 2018.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2018physics_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2018physics_bibtex'); return false;">BibTex</a>] [<a href="https://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/eppnermartin_18_icra.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=w8FgpwdIZ2g">Video</a>]</div>
+                    <div class="bibtex" id="eppner2018physics_bibtex"><br />@inproceedings{eppner2018physics,<br />&nbsp;&nbsp; title = {Physics-Based Selection of Informative Actions for Interactive Perception},<br />&nbsp;&nbsp; author = {Clemens Eppner and Roberto Mart\'{\i}n-Mart\'{\i}n and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp; year = {2018}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2018physics_abstract">Interactive perception exploits the correlation between forceful interactions and changes in the observed signals to extract task-relevant information from the sensor stream. Finding the most informative interactions to perceive complex objects, like articulated mechanisms, is challenging because the outcome of the interaction is difficult to predict. We propose a method to select the most informative action while deriving a model of articulated mechanisms that includes kinematic, geometric, and dynamic properties. Our method addresses the complexity of the action selection task based on two insights. First, we show that for a class of interactive perception methods, information gain can be approximated by the amount of motion induced in the mechanism. Second, we resort to physics simulations grounded in the real-world through interactive perception to predict possible action outcomes. Our method enables the robot to autonomously select actions for interactive perception that reveal most information, given the current knowledge ofthe world. This leads to improved perception and more accurate world models, finally enabling robust manipulation.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2017visual.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Visual Detection of Opportunities to Exploit Contact in Grasping Using Contextual Multi-Armed Bandits</h5>
+                    <div class="authors"><b>Clemens Eppner</b> and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Vancouver, Canada. September 2017.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2017visual_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2017visual_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Eppner17_IROS.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=xFw-zetsMfY">Video</a>]</div>
+                    <div class="bibtex" id="eppner2017visual_bibtex"><br />@inproceedings{eppner2017visual,<br />&nbsp;&nbsp; title = {Visual Detection of Opportunities to Exploit Contact in Grasping Using Contextual Multi-Armed Bandits},<br />&nbsp;&nbsp; author = {Clemens Eppner and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2017}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2017visual_abstract">Environment-constrained grasping exploits beneficial interactions between hand, object, and environment to increase grasp success. Instead of focusing on the final static relationship between hand posture and object pose, this view of grasping emphasizes the need and the opportunity to select the most appropriate, contact-rich grasping motion, leading up to a final static grasp configuration. This view changes the nature of the underlying planning problem: Instead of planning for static contact points, we need to decide which environmental constraint (EC) to use during the grasping motion. We propose a method to make these decisions based on depth measurements so as to generate robust grasps for a large variety of objects. Our planner exploits the advantages of a soft robot  hand and learns a hand-specific classifier for edge-, surface-, and wall-grasps, each exploiting a different EC. Additionally, we show how the model can continuously be improved in a contextual multi-armed bandit setting without an explicit training and test phase, enabling the continuous improvement of a robot’s grasping skills throughout life time.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/sieverling2017interleaving.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Interleaving Motion in Contact and in Free Space for Planning Under Uncertainty</h5>
+                    <div class="authors">Arne Sieverling, <b>Clemens Eppner</b>, Felix Wolff and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Vancouver, Canada. September 2017.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('sieverling2017interleaving_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('sieverling2017interleaving_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Sieverling17_IROS.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=CXaN8ZWRMT0">Video</a>]</div>
+                    <div class="bibtex" id="sieverling2017interleaving_bibtex"><br />@inproceedings{sieverling2017interleaving,<br />&nbsp;&nbsp; title = {Interleaving Motion in Contact and in Free Space for Planning Under Uncertainty},<br />&nbsp;&nbsp; author = {Arne Sieverling and Clemens Eppner and Felix Wolff and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2017}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="sieverling2017interleaving_abstract">In this paper we present a planner that interleaves free-space motion with motion in contact to reduce uncertainty. The planner finds such motions by growing a search tree in the combined space of collision-free and contact configurations. The planner reasons  efficiently about the accumulated uncertainty by factoring the state in a belief over configuration and a fully observable contact state. We show the uncertainty-reducing capabilities of the planner on manipulation benchmark from the POMDP literature. The planner scales up to more complex problems like manipulation under uncertainty in seven-dimensional configuration space. We validate our planner in simulation and on a real robot.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/gupta2016learning.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstrations</h5>
+                    <div class="authors">Abhishek Gupta, <b>Clemens Eppner</b>, Sergey Levine and Pieter Abbeel</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Deajeon, South Korea. October 2016.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('gupta2016learning_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('gupta2016learning_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/abs/1603.06348">PDF</a>]  [<a href="https://www.youtube.com/watch?v=XyZFkJWu0Q0">Video</a>]</div>
+                    <div class="bibtex" id="gupta2016learning_bibtex"><br />@inproceedings{gupta2016learning,<br />&nbsp;&nbsp; title = {Learning Dexterous Manipulation for a Soft Robotic Hand from Human Demonstrations},<br />&nbsp;&nbsp; author = {Gupta, Abhishek and Eppner, Clemens and Levine, Sergey and Abbeel, Pieter},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2016}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="gupta2016learning_abstract">Dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers. However, sophisticated multi-fingered hands are often expensive and fragile. Low-cost soft hands offer an appealing alternative to more conventional devices, but present considerable challenges in sensing and actuation, making them difficult to apply to more complex manipulation tasks. In this paper, we describe an approach to learning from demonstration that can be used to train soft robotic hands to perform dexterous manipulation tasks. Our method uses object-centric demonstrations, where a human demonstrates the desired motion of manipulated objects with their own hands, and the robot autonomously learns to imitate these demonstrations using reinforcement learning. We propose a novel algorithm that allows us to blend and select a subset of the most feasible demonstrations to learn to imitate on the hardware, which we use with an extension of the guided policy search framework to use multiple demonstrations to learn generalizable neural network policies. We demonstrate our approach on the RBO Hand 2, with learned motor skills for turning a valve, manipulating an abacus, and grasping.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/jonschkowski2016probabilistic.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Probabilistic Multi-Class Segmentation for the Amazon Picking Challenge</h5>
+                    <div class="authors">Rico Jonschkowski, <b>Clemens Eppner</b>*, Sebastian Höfer*, Roberto Martín-Martín* and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Deajeon, South Korea. October 2016.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('jonschkowski2016probabilistic_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('jonschkowski2016probabilistic_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-IROS.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=Ry6JzeW0HOM">Video</a>] [<a href="http://www.iros2016.org/awards.html">Award</a>]</div>
+                    <div class="bibtex" id="jonschkowski2016probabilistic_bibtex"><br />@inproceedings{jonschkowski2016probabilistic,<br />&nbsp;&nbsp; title = {Probabilistic Multi-Class Segmentation for the Amazon Picking Challenge},<br />&nbsp;&nbsp; author = {Rico Jonschkowski and Clemens Eppner and Sebastian H{\"o}fer and Roberto Mart\'{\i}n-Mart\'{\i}n and Oliver Brock },<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2016}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="jonschkowski2016probabilistic_abstract">We present a method for multi-class segmentation from RGB-D data in a realistic warehouse picking setting. The method computes pixel-wise probabilities and combines them to find a coherent object segmentation. It reliably segments objects in cluttered scenarios, even when objects are translucent, reflective, highly deformable, have fuzzy surfaces, or consist of loosely coupled components. The robust performance results from the exploitation of problem structure inherent to the warehouse setting. The proposed method proved its capabilities as part of our winning entry to the 2015 Amazon Picking Challenge. We present a detailed experimental analysis of the contribution of different information sources, compare our method to standard segmentation techniques, and assess possible extensions that further enhance the algorithm's capabilities. We release our software and data sets as open source.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2016lessons.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Lessons from the Amazon Picking Challenge: Four Aspects of Building Robotic Systems</h5>
+                    <div class="authors"><b>Clemens Eppner</b>*, Sebastian Höfer*, Rico Jonschkowski*, Roberto Martín-Martín*, Arne Sieverling*, Vincent Wall* and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of Robotics: Science and Systems (RSS). Ann Arbor, Michigan, USA. June 2016.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2016lessons_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2016lessons_bibtex'); return false;">BibTex</a>] [<a href="http://www.redaktion.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/apc_rbo_rss2016_final.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=UrpMfdj-Mpc">Video</a>] [<a href="">Award</a>]</div>
+                    <div class="bibtex" id="eppner2016lessons_bibtex"><br />@inproceedings{eppner2016lessons,<br />&nbsp;&nbsp; title = {Lessons from the Amazon Picking Challenge: Four Aspects of Building Robotic Systems},<br />&nbsp;&nbsp; author = {Clemens Eppner and Sebastian H{\"o}fer and Rico Jonschkowski and Roberto Mart\'{\i}n-Mart\'{\i}n and Arne Sieverling and Vincent Wall and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of Robotics: Science and Systems (RSS)},<br />&nbsp;&nbsp; year = {2016}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2016lessons_abstract">We describe the winning entry to the Amazon Picking Challenge. From the experience of building this system and competing in the Amazon Picking Challenge, we derive several conclusions: 1) We suggest to characterize robotic systems building along four key aspects, each of them spanning a spectrum of solutions: modularity vs. integration, generality vs. assumptions, computation vs. embodiment, and planning vs. feedback. 2) To understand which region of each spectrum most adequately addresses which robotic problem, we must explore the full spectrum of possible approaches. To achieve this, our community should agree on key aspects that characterize the solution space of robotic systems. 3) For manipulation problems in unstructured environments, certain regions of each spectrum match the problem most adequately, and should be exploited further. This is supported by the fact that our solution deviated from the majority of the other challenge entries along each of the spectra.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/mordatch2016combining.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Combining Model-Based Policy Search with Online Model Learning for Control of Physical Humanoids</h5>
+                    <div class="authors">Igor Mordatch, Nikhil Mishra, <b>Clemens Eppner</b> and Pieter Abbeel</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Stockholm, Sweden. May 2016.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('mordatch2016combining_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('mordatch2016combining_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/mordatch2016.pdf">PDF</a>]  [<a href="https://www.technologyreview.com/s/542921/robot-toddler-learns-to-stand-by-imagining-how-to-do-it/">Press</a>]</div>
+                    <div class="bibtex" id="mordatch2016combining_bibtex"><br />@conference{mordatch2016combining,<br />&nbsp;&nbsp; title = {Combining Model-Based Policy Search with Online Model Learning for Control of Physical Humanoids},<br />&nbsp;&nbsp; author = {Igor Mordatch and Nikhil Mishra and Clemens Eppner and Pieter Abbeel},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp; year = {2016}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="mordatch2016combining_abstract">We present an automatic method for interactive control of physical humanoid robots based on high-level tasks that does not require manual specification of motion trajectories or specially-designed control policies. The method is based on the combination of a model-based policy that is trained off-line in simulation and sends high-level commands to a model-free controller that executes these commands on the physical robot. This low-level controller simultaneously learns and adapts a local model of dynamics on-line and computes optimal controls under the learned model. The high-level policy is trained using a combination of trajectory optimization and neural network learning, while considering physical limitations such as limited sensors and communication delays. The entire system runs in real-time on the robot's computer and uses only on-board sensors. We demonstrate successful policy execution on a range of tasks such as leaning, hand reaching, and robust balancing behaviors atop a tilting base on the physical robot and in simulation.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2015planning.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Planning Grasp Strategies That Exploit Environmental Constraints</h5>
+                    <div class="authors"><b>Clemens Eppner</b> and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Seattle, USA. May 2015.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2015planning_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2015planning_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/eppner_icra2015.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=Va0O0JS9bx0">Video</a>] [<a href="https://github.com/SoMa-Project/ec_grasp_planner">Code</a>]</div>
+                    <div class="bibtex" id="eppner2015planning_bibtex"><br />@inproceedings{eppner2015planning,<br />&nbsp;&nbsp; title = {Planning Grasp Strategies That Exploit Environmental Constraints},<br />&nbsp;&nbsp; author = {Clemens Eppner and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp; year = {2015}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2015planning_abstract">There is strong evidence that robustness in human and robotic grasping can be achieved through the deliberate exploitation of contact with the environment. In contrast to this, traditional grasp planners generally disregard the opportunity to interact with the environment during grasping. In this paper, we propose a novel view of grasp planning that centers on the exploitation of environmental contact. In this view, grasps are sequences of constraint exploitations, i.e. consecutive motions constrained by features in the environment, ending in a grasp. To be able to generate such grasp plans, it becomes necessary to consider planning, perception, and control as tightly integrated components. As a result, each of these components can be simplified while still yielding reliable grasping performance. We propose a first implementation of a grasp planner based on this view and demonstrate in real-world experiments the robustness and versatility of the resulting grasp plans.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/heinemann2015taxonomy.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>A Taxonomy of Human Grasping Behavior Suitable for Transfer to Robotic Hands</h5>
+                    <div class="authors">Fabian Heinemann, Steffen Puhlmann, <b>Clemens Eppner</b>, José Álvarez-Ruiz, Marianne Maertens and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Seattle, USA. May 2015.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('heinemann2015taxonomy_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('heinemann2015taxonomy_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/heinemann_puhlmann_icra2015.pdf">PDF</a>] </div>
+                    <div class="bibtex" id="heinemann2015taxonomy_bibtex"><br />@inproceedings{heinemann2015taxonomy,<br />&nbsp;&nbsp; title = {A Taxonomy of Human Grasping Behavior Suitable for Transfer to Robotic Hands},<br />&nbsp;&nbsp; author = {Heinemann, Fabian and Puhlmann, Steffen and Eppner, Clemens and {\'A}lvarez-Ruiz, Jos{\'e} and Maertens, Marianne and Brock, Oliver},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp; year = {2015}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="heinemann2015taxonomy_abstract">As a first step towards transferring human grasping capabilities to robots, we analyzed the grasping behavior of human subjects. We derived a taxonomy in order to adequately represent the observed strategies. During the analysis of the recorded data, this classification scheme helped us to obtain a better understanding of human grasping behavior. We will provide support for our hypothesis that humans exploit compliant contact between the hand and the environment to compensate for uncertainty. We will also show a realization of the resulting grasping strategies on a real robot. It is our belief that the detailed analysis of human grasping behavior will ultimately lead to significant increases in robot manipulation and dexterity.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2015exploitation.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Exploitation of Environmental Constraints in Human and Robotic Grasping</h5>
+                    <div class="authors"><b>Clemens Eppner</b>, Raphael Deimel, José Álvarez-Ruiz, Marianne Maertens and Oliver Brock</div>
+                    <div class="booktitle">The International Journal of Robotics Research. SAGE Publications. April 2015.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2015exploitation_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2015exploitation_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Eppner-Deimel-Ruiz-2015-IJRR.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=ZOqY_ZBrKqA">Video</a>]</div>
+                    <div class="bibtex" id="eppner2015exploitation_bibtex"><br />@article{eppner2015exploitation,<br />&nbsp;&nbsp; title = {Exploitation of Environmental Constraints in Human and Robotic Grasping},<br />&nbsp;&nbsp; author = {Eppner, Clemens and Deimel, Raphael and {\'A}lvarez-Ruiz, Jos{\'e} and Maertens, Marianne and Brock, Oliver},<br />&nbsp;&nbsp; journal = {The International Journal of Robotics Research},<br />&nbsp;&nbsp; year = {2015}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2015exploitation_abstract">We investigate the premise that robust grasping performance is enabled by exploiting constraints present in the environment. These constraints, leveraged through motion in contact, counteract uncertainty in state variables relevant to grasp success. Given this premise, grasping becomes a process of successive exploitation of environmental constraints, until a successful grasp has been established. We present support for this view found through the analysis of human grasp behavior and by showing robust robotic grasping based on constraint-exploiting grasp strategies. Furthermore, we show that it is possible to design robotic hands with inherent capabilities for the exploitation of environmental constraints.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/deimel2013exploitation.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Exploitation of Environmental Constraints in Human and Robotic Grasping</h5>
+                    <div class="authors">Raphael Deimel, <b>Clemens Eppner</b>, José Álvarez-Ruiz, Marianne Maertens and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the 16th International Symposium on Robotics Research (ISRR). Singapore. December 2013.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('deimel2013exploitation_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('deimel2013exploitation_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/isrr2013.pdf">PDF</a>] </div>
+                    <div class="bibtex" id="deimel2013exploitation_bibtex"><br />@inproceedings{deimel2013exploitation,<br />&nbsp;&nbsp; title = {Exploitation of Environmental Constraints in Human and Robotic Grasping},<br />&nbsp;&nbsp; author = {Raphael Deimel and Clemens Eppner and Jos{\'e} {\'A}lvarez-Ruiz and Marianne Maertens and Oliver Brock},<br />&nbsp;&nbsp; booktitle = {Proceedings of the 16th International Symposium on Robotics Research (ISRR)},<br />&nbsp;&nbsp; year = {2013}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="deimel2013exploitation_abstract">We investigate the premise that robust grasping performance is enabled by exploiting constraints present in the environment. These constraints, leveraged through motion in contact, counteract uncertainty in state variables relevant to grasp success. Given this premise, grasping becomes a process of successive exploitation of environmental constraints, until a successful grasp has been established. We present support for this view by analyzing human grasp behavior and by showing robust robotic grasping based on constraint-exploiting grasp strategies. Furthermore, we show that it is possible to design robotic hands with inherent capabilities for the exploitation of environmental constraints.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2013grasping.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Grasping Unknown Objects by Exploiting Shape Adaptability and Environmental Constraints</h5>
+                    <div class="authors"><b>Clemens Eppner</b> and Oliver Brock</div>
+                    <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Tokyo, Japan. November 2013.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2013grasping_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2013grasping_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/eppner_iros13.pdf">PDF</a>] </div>
+                    <div class="bibtex" id="eppner2013grasping_bibtex"><br />@inproceedings{eppner2013grasping,<br />&nbsp;&nbsp; title = {Grasping Unknown Objects by Exploiting Shape Adaptability and Environmental Constraints},<br />&nbsp;&nbsp; author = {Eppner, Clemens and Brock, Oliver},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2013}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2013grasping_abstract">In grasping, shape adaptation between hand and object has a major influence on grasp success. In this paper, we present an approach to grasping unknown objects that explicitly considers the effect of shape adaptability to simplify perception. Shape adaptation also occurs between the hand and the environment, for example, when fingers slide across the surface of the table to pick up a small object. Our approach to grasping also considers environmental shape adaptability to select grasps with high probability of success. We validate the proposed shape-adaptability-aware grasping approach in 880 real-world grasping trials with 30 objects. Our experiments show that the explicit consideration of shape adaptability of the hand leads to robust grasping of unknown objects. Simple perception suffices to achieve this robust grasping behavior.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/faber2009humanoid.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>The Humanoid Museum Tour Guide Robotinho</h5>
+                    <div class="authors">Felix Faber, Maren Bennewitz, <b>Clemens Eppner</b>, Attila Gorog, Christoph Gonsior, Dominik Joho, Michael Schreiber and Sven Behnke</div>
+                    <div class="booktitle">Proceedings of the 18th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN). Toyama, Japan. September 2009.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('faber2009humanoid_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('faber2009humanoid_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/eppner_oct.2009.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=PF2qZ-O3yAM">Video</a>]</div>
+                    <div class="bibtex" id="faber2009humanoid_bibtex"><br />@inproceedings{faber2009humanoid,<br />&nbsp;&nbsp; title = {The Humanoid Museum Tour Guide Robotinho},<br />&nbsp;&nbsp; author = {Faber, Felix and Bennewitz, Maren and Eppner, Clemens and Gorog, Attila and Gonsior, Christoph and Joho, Dominik and Schreiber, Michael and Behnke, Sven},<br />&nbsp;&nbsp; booktitle = {Proceedings of the 18th IEEE International Symposium on Robot and Human Interactive Communication (RO-MAN)},<br />&nbsp;&nbsp; year = {2009}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="faber2009humanoid_abstract">Wheeled tour guide robots have already been deployed in various museums or fairs worldwide. A key requirement for successful tour guide robots is to interact with people and to entertain them. Most of the previous tour guide robots, however, focused more on the involved navigation task than on natural interaction with humans. Humanoid robots, on the other hand, offer a great potential for investigating intuitive, multimodal interaction between humans and machines. In this paper, we present our mobile full-body humanoid tour guide robot Robotinho. We provide mechanical and electrical details and cover perception, the integration of multiple modalities for interaction, navigation control, and system integration aspects. The multimodal interaction capabilities of Robotinho have been designed and enhanced according to the questionnaires filled out by the people who interacted with the robot at previous public demonstrations. We present experiences we have made during experiments in which untrained users interacted with the robot.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2009imitation.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Imitation Learning with Generalized Task Descriptions</h5>
+                    <div class="authors"><b>Clemens Eppner</b>, Jürgen Sturm, Maren Bennewitz, Cyrill Stachniss and Wolfram Burgard</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Kobe, Japan. May 2009.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2009imitation_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2009imitation_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/EppnerMay_2009.pdf">PDF</a>]  [<a href="https://www.youtube.com/playlist?list=PLzPHJWMXrQM4NeNj7KnQFAKrOjAty2LRt">Video</a>]</div>
+                    <div class="bibtex" id="eppner2009imitation_bibtex"><br />@inproceedings{eppner2009imitation,<br />&nbsp;&nbsp; title = {Imitation Learning with Generalized Task Descriptions},<br />&nbsp;&nbsp; author = {Eppner, Clemens and Sturm, J{\"u}rgen and Bennewitz, Maren and Stachniss, Cyrill and Burgard, Wolfram},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp; year = {2009}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2009imitation_abstract">In this paper, we present an approach that allows a robot to observe, generalize, and reproduce tasks observed from multiple demonstrations. Motion capture data is recorded in which a human instructor manipulates a set of objects. In our approach, we learn relations between body parts of the demonstrator and objects in the scene. These relations result in a generalized task description. The problem of learning and reproducing human actions is formulated using a dynamic Bayesian network (DBN). The posteriors corresponding to the nodes of the DBN are estimated by observing objects in the scene and body parts of the demonstrator. To reproduce a task, we seek for the maximum-likelihood action sequence according to the DBN. We additionally show how further constraints can be incorporated online, for example, to robustly deal with unforeseen obstacles. Experiments carried out with a real 6-DoF robotic manipulator as well as in simulation show that our approach enables a robot to reproduce a task carried out by a human demonstrator. Our approach yields a high degree of generalization illustrated by performing a pick-and-place and a whiteboard cleaning task.</div>
+                </div>
+            </div>
+        
+                </div>
+                
+                <div>
+                  <h3 class="header">Theses</h3>
+                  
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2018thesis.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Robot Grasping by Exploiting Compliance and Environmental Constraints</h5>
+                    <div class="authors"><b>Clemens Eppner</b></div>
+                    <div class="booktitle">Doctoral Thesis. Technische Universität Berlin. February 2018.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2018thesis_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2018thesis_bibtex'); return false;">BibTex</a>] [<a href="https://depositonce.tu-berlin.de/bitstream/11303/9884/4/eppner_clemens.pdf">PDF</a>]  [<a href="https://www.youtube.com/playlist?list=PLzPHJWMXrQM7_-AOvx26nX1PDzGLkoYZb">Video</a>]</div>
+                    <div class="bibtex" id="eppner2018thesis_bibtex"><br />@phdthesis{eppner2018thesis,<br />&nbsp;&nbsp; title = {Robot Grasping by Exploiting Compliance and Environmental Constraints},<br />&nbsp;&nbsp; author = {Clemens Eppner},<br />&nbsp;&nbsp; booktitle = {Doctoral Thesis},<br />&nbsp;&nbsp; school = {Technische Universität Berlin},<br />&nbsp;&nbsp; year = {2018}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2018thesis_abstract">Grasping is a crucial skill for any autonomous system that needs to alter the physical world. The complexity of robot grasping stems from the fact that any solution comprises various components: Hand design, control, perception, and planning all affect the success of a grasp. Apart from picking solutions in well-defined industrial scenarios, general grasping in unstructured environment is still an open problem.
+In this thesis, we exploit two general properties to devise grasp planning algorithms: the compliance of robot hands and the stiffness of the environment that surrounds an object. We view hand compliance as an enabler for local adaptability in the grasping process that does not require explicit reasoning or planning. As a result, we study compliance-aware algorithms to synthesize grasps. Exploiting hand compliance also simplifies perception, since precise geometric object models are not needed. Complementary to hand compliance is the idea of exploiting the stiffness of the environment. In real-world scenarios, objects never occur in isolation. They are situated in an environmental context: on a table, in a shelf, inside a drawer, etc. Robotic grasp strategies can benefit from contact with the environment by pulling objects to edges, pushing them against surfaces etc. We call this principle the exploitation of environmental constraints. We present grasp planning algorithms which detect and sequence environmental constraint exploitations.
+We study the two ideas by focusing on the relationships between the three main constituents of the grasping problem: hand, object, and environment. We show that the interactions between adaptable hands and objects lend themselves to low-dimensional grasp actions. Based on this insight, we devise two grasp planning algorithms which map compliance modes to raw sensor signals using minimal prior knowledge. Next, we focus on the interactions between hand and environment. We show that contacting the environment can improve success in motion and grasping tasks. We conclude our investigations by considering interactions between all three factors: hand, object, and environment. We extend our grasping approach to select the most appropriate environmental constraint exploitation based on the shape of an object. Finally, we consider simple manipulation tasks that require individual finger movements. Although compliant hands pose challenges due to the difficulty in modeling and limitations in sensing, we propose an approach to learn feedback control strategies that solve these tasks. We evaluate all algorithms presented in this thesis in extensive real-world experiments, compare their assumptions and discuss limitations. The investigations and planning algorithms show that exploiting compliance in hands and stiffness in the environment leads to improved grasp performance.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2008thesis.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Techniques for the Imitiation of Manipulative Actions by Robots</h5>
+                    <div class="authors"><b>Clemens Eppner</b></div>
+                    <div class="booktitle">Diploma Thesis. Albert-Ludwigs-Universität Freiburg. November 2008.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2008thesis_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2008thesis_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/2008_eppner_thesis.pdf">PDF</a>]  [<a href="https://www.youtube.com/playlist?list=PLzPHJWMXrQM4NeNj7KnQFAKrOjAty2LRt">Video</a>]</div>
+                    <div class="bibtex" id="eppner2008thesis_bibtex"><br />@phdthesis{eppner2008thesis,<br />&nbsp;&nbsp; title = {Techniques for the Imitiation of Manipulative Actions by Robots},<br />&nbsp;&nbsp; author = {Clemens Eppner},<br />&nbsp;&nbsp; booktitle = {Diploma Thesis},<br />&nbsp;&nbsp; school = {Albert-Ludwigs-Universität Freiburg},<br />&nbsp;&nbsp; year = {2008}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2008thesis_abstract">In this thesis, we present an approach that allows a robot to observe, generalize, and reproduce tasks observed from multiple demonstrations. Motion capture data is recorded in which a human instructor manipulates a set of objects. In our approach, we learn relations between body parts of the demonstrator and objects in the scene. These relations result in a generalized task description. The problem of learning and reproducing human actions is formulated using a dynamic Bayesian network (DBN). The posteriors corresponding to the nodes of the DBN are estimated by observing objects in the scene and body parts of the demonstrator. To reproduce a task, we seek for the maximum-likelihood action sequence according to the DBN. We additionally show how further constraints can be incorporated online, for example, to robustly deal with unforeseen obstacles. Experiments carried out with a real 6-DoF robotic manipulator as well as in simulation show that our approach enables a robot to reproduce a task carried out by a human demonstrator. Our approach yields a high degree of generalization illustrated by performing a pick-and-place, a pouring, and a whiteboard cleaning task.</div>
+                </div>
+            </div>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/eppner2007thesis.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Simulation eines Prallluftschiffs</h5>
+                    <div class="authors"><b>Clemens Eppner</b></div>
+                    <div class="booktitle">Studienarbeit. Albert-Ludwigs-Universität Freiburg. October 2007.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2007thesis_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2007thesis_bibtex'); return false;">BibTex</a>] [<a href="blimp_eppner_2007.pdf">PDF</a>] </div>
+                    <div class="bibtex" id="eppner2007thesis_bibtex"><br />@phdthesis{eppner2007thesis,<br />&nbsp;&nbsp; title = {Simulation eines Prallluftschiffs},<br />&nbsp;&nbsp; author = {Clemens Eppner},<br />&nbsp;&nbsp; booktitle = {Studienarbeit},<br />&nbsp;&nbsp; school = {Albert-Ludwigs-Universität Freiburg},<br />&nbsp;&nbsp; year = {2007}<br />&nbsp;&nbsp;}</div>
+                    <div class="abstract" id="eppner2007thesis_abstract"></div>
+                </div>
+            </div>
+        
+                </div>
+            </div>
+        </section>
+        
+        <footer>&copy; 2019 Clemens Eppner. <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-NC-SA-4.0</a>. Built with <a href="https://kbrsh.github.io/wing">Wing</a>.</footer>
+    </body>
+</html>
