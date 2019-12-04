@@ -57,19 +57,19 @@ a {
   border: none;
 }
 
-.hero {
+.banner {
   color: #363636;
   margin-top: 3rem;
 }
 
-.hero h3 {
+.banner h3 {
   font-family: "Edelsans", sans-serif;
   font-size: 5rem;
   margin-top: 2rem;
   margin-bottom: 0px;
 }
 
-.hero h5 {
+.banner h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 200;
@@ -81,6 +81,8 @@ a {
 
 .header {
   font-weight: 200;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .content {
@@ -129,6 +131,7 @@ a {
 
 .abstract {
     display: none;
+    text-align: justify;
 }
 
 .booktitle {
@@ -155,7 +158,8 @@ a {
 .right-col-rest {
     overflow: hidden;
 }
-.hero-text {
+
+.banner-text {
     margin-top: 1rem;
     display: inline-block;
     line-height: 22px;
