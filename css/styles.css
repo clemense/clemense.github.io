@@ -138,25 +138,31 @@ a {
     font-style: italic;
 }
 
-.left-col-image-150px {
-    float: left;
-    width: 125px;
-    margin-bottom: 0px;
-    margin-right: 2rem;
-    display: block;
+.banner-title {
+    display: flex;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-start;
+}
+/* Small screens */
+@media all and (max-width: 650px) {
+  .banner-title {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#bannerportrait {
+  margin-right: 2rem;
 }
 
 .right-col-center {
-    overflow: hidden;
     text-align: center;
-    display: flex; 
 }
 .right-col-center p {
-    margin: 0px;
-}
-
-.right-col-rest {
-    overflow: hidden;
+    margin: 0;
 }
 
 .banner-text {
