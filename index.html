@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<script>
-function togglediv(id) {
-    var div = document.getElementById(id);
-    div.style.display = (div.style.display == "none" || div.style.display == "") ? "block" : "none";
-}
-</script>
-<html>
+<html lang="en">
     <head>
+        <script>
+        function togglediv(id) {
+            var div = document.getElementById(id);
+            div.style.display = (div.style.display == "none" || div.style.display == "") ? "block" : "none";
+        }
+        </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147178996-2"></script>
         <script>
@@ -46,7 +46,7 @@ function togglediv(id) {
         <meta name="msapplication-TileColor" content="#FFFFFF">
         <meta name="msapplication-TileImage" content="favicon/favicon-144.png">
         <meta name="msapplication-config" content="favicon/browserconfig.xml">
-        <!-- End -->
+        <!-- End favicon settings -->
 
         <link rel="stylesheet" type="text/css" href="./fonts/fonts.css" />
         <link rel="stylesheet" type="text/css" href="./dist/wing.css" />
@@ -58,7 +58,7 @@ function togglediv(id) {
     <body>
         <section class="banner container">
               <div class="banner-title">
-                <img id="bannerportrait" src="./img/delauney.png" height="125" width="125">
+                <img id="bannerportrait" src="./img/delauney.png" img="Portrait" height="125" width="125">
                 <div class="right-col-center">
 		              <span class="center"><h3 class="left">Clemens Eppner</h3>
 			            <p><span class="link_color">ceppner at nvidia dot com</span></p></span>
@@ -98,18 +98,6 @@ function togglediv(id) {
                     <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('paxton2019logicaldynamicalsystems_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('paxton2019logicaldynamicalsystems_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1908.01896.pdf">PDF</a>] </div>
                     <div class="bibtex" id="paxton2019logicaldynamicalsystems_bibtex"><br />@inproceedings{paxton2019logicaldynamicalsystems,<br />&nbsp;&nbsp; title = {Representing Robot Task Plans as Robust Logical-Dynamical Systems},<br />&nbsp;&nbsp; author = {Christopher Paxton and Nathan Ratliff and Clemens Eppner and Dieter Fox},<br />&nbsp;&nbsp; booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
                     <div class="abstract" id="paxton2019logicaldynamicalsystems_abstract">It is difficult to create robust, reusable, and reactive behaviors for robots that can be easily extended and combined. Frameworks such as Behavior Trees are flexible but difficult to characterize, especially when designing reactions and recovery behaviors to consistently converge to a desired goal condition. We propose a framework which we call Robust Logical-Dynamical Systems (RLDS), which combines the advantages of task representations like behavior trees with theoretical guarantees on performance. RLDS can also be constructed automatically from simple sequential task plans and will still achieve robust, reactive behavior in dynamic real-world environments. In this work, we describe both our proposed framework and a case study on a simple household manipulation task, with examples for how specific pieces can be implemented to achieve robust behavior. Finally, we show how in the context of these manipulation tasks, a combination of an RLDS with planning can achieve better results under adversarial conditions.</div>
-                </div>
-            </div>
-        
-            <div class="publication">
-                <div class="col-image"><img src="thumbnails/eppner2019graspsampling.png" width="100" alt="" /></div>
-                <div class="col-rest">
-                    <h5>A Billion Ways to Grasp: An Evaluation of Grasp Sampling Schemes on a Dense, Physics-Based Grasp Data Set</h5>
-                    <div class="authors"><b>Clemens Eppner</b>, Arsalan Mousavian and Dieter Fox</div>
-                    <div class="booktitle">Springer Proceedings of the 19th International Symposium of Robotics Research (ISRR). Hanoi, Vietnam. October 2019.</div>
-                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('eppner2019graspsampling_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('eppner2019graspsampling_bibtex'); return false;">BibTex</a>] [<a href="">PDF</a>] </div>
-                    <div class="bibtex" id="eppner2019graspsampling_bibtex"><br />@inproceedings{eppner2019graspsampling,<br />&nbsp;&nbsp; title = {A Billion Ways to Grasp: An Evaluation of Grasp Sampling Schemes on a Dense, Physics-Based Grasp Data Set},<br />&nbsp;&nbsp; author = {Clemens Eppner and Arsalan Mousavian and Dieter Fox},<br />&nbsp;&nbsp; booktitle = {Springer Proceedings of the 19th International Symposium of Robotics Research (ISRR)},<br />&nbsp;&nbsp; year = {2019}<br />&nbsp;&nbsp;}</div>
-                    <div class="abstract" id="eppner2019graspsampling_abstract"></div>
                 </div>
             </div>
         

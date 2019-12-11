@@ -171,6 +171,10 @@ a {
     line-height: 22px;
 } 
 
+.banner-text p {
+  text-align: jusify;
+}
+
 .col-image {
     float: left;
     width: 120px;
