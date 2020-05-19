@@ -132,6 +132,7 @@ a {
 .abstract {
     display: none;
     text-align: justify;
+    color: #696969;
 }
 
 .booktitle {
