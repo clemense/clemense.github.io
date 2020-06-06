@@ -102,16 +102,21 @@
         </section>
         
         <section class="container">
+                  <!--
                   <h3 class="header">Preprints</h3>
+                  
+                  -->
+
+                  <h3 class="header">Refereed Conference &amp; Journal Publications</h3>
                   
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/murali2019cluttergrasping.png" width="100" alt="" /></div>
                 <div class="col-rest">
                     <h5>6-DOF Grasping for Target-driven Object Manipulation in Clutter</h5>
                     <div class="authors">Adithya Murali, Arsalan Mousavian, <b>Clemens Eppner</b>, Chris Paxton and Dieter Fox</div>
-                    <div class="booktitle"> December 2019.</div>
-                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('murali2019cluttergrasping_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('murali2019cluttergrasping_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1912.03628.pdf">PDF</a>]  [<a href="https://youtu.be/w0B5S-gCsJk">Video</a>]</div>
-                    <div class="bibtex" id="murali2019cluttergrasping_bibtex"><br />@unpublished{murali2019cluttergrasping,<br />&nbsp;&nbsp;title = {6-DOF Grasping for Target-driven Object Manipulation in Clutter},<br />&nbsp;&nbsp;author = {Murali, Adithya and Mousavian, Arsalan and Eppner, Clemens and Paxton, Chris and Fox, Dieter},<br />&nbsp;&nbsp;year = {2019}<br />}</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Paris, France. May 2020.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('murali2019cluttergrasping_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('murali2019cluttergrasping_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1912.03628.pdf">PDF</a>]  [<a href="https://youtu.be/w0B5S-gCsJk">Video</a>] [<a href="https://www.icra2020.org/program/conference-awards">ICRA 2020 Best Student & Best Manipulation Paper Award Finalist</a>]</div>
+                    <div class="bibtex" id="murali2019cluttergrasping_bibtex"><br />@inproceedings{murali2019cluttergrasping,<br />&nbsp;&nbsp;title = {6-DOF Grasping for Target-driven Object Manipulation in Clutter},<br />&nbsp;&nbsp;author = {Murali, Adithya and Mousavian, Arsalan and Eppner, Clemens and Paxton, Chris and Fox, Dieter},<br />&nbsp;&nbsp;booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp;year = {2020}<br />}</div>
                     <div class="abstract" id="murali2019cluttergrasping_abstract">Grasping in cluttered environments is a fundamental but challenging robotic skill. It requires both reasoning about unseen object parts and potential collisions with the manipulator. Most existing data-driven approaches avoid this problem by limiting themselves to top-down planar grasps which is insufficient for many real-world scenarios and greatly limits possible grasps. We present a method that plans 6-DOF grasps for any desired object in a cluttered scene from partial point cloud observations. Our method achieves a grasp success of 80.3%, outperforming baseline approaches by 17.6% and clearing 9 cluttered table scenes (which contain 23 unknown objects and 51 picks in total) on a real robotic platform. By using our learned collision checking module, we can even reason about effective grasp sequences to retrieve objects that are not immediately accessible.</div>
                 </div>
             </div>
@@ -121,16 +126,13 @@
                 <div class="col-rest">
                     <h5>Self-supervised 6D Object Pose Estimation for Robot Manipulation</h5>
                     <div class="authors">Xinke Deng, Yu Xiang, Arsalan Mousavian, <b>Clemens Eppner</b>, Timothy Bretl and Dieter Fox</div>
-                    <div class="booktitle"> October 2019.</div>
+                    <div class="booktitle">Proceedings of the IEEE International Conference on Robotics and Automation (ICRA). Paris, France. May 2020.</div>
                     <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('deng2019selfsupervised_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('deng2019selfsupervised_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/1909.10159">PDF</a>]  [<a href="https://youtu.be/W1Y0Mmh1Gd8">Video</a>]</div>
-                    <div class="bibtex" id="deng2019selfsupervised_bibtex"><br />@unpublished{deng2019selfsupervised,<br />&nbsp;&nbsp;title = {Self-supervised 6D Object Pose Estimation for Robot Manipulation},<br />&nbsp;&nbsp;author = {Deng, Xinke and Xiang, Yu and Mousavian, Arsalan and Eppner, Clemens and Bretl, Timothy and Fox, Dieter},<br />&nbsp;&nbsp;year = {2019}<br />}</div>
+                    <div class="bibtex" id="deng2019selfsupervised_bibtex"><br />@inproceedings{deng2019selfsupervised,<br />&nbsp;&nbsp;title = {Self-supervised 6D Object Pose Estimation for Robot Manipulation},<br />&nbsp;&nbsp;author = {Deng, Xinke and Xiang, Yu and Mousavian, Arsalan and Eppner, Clemens and Bretl, Timothy and Fox, Dieter},<br />&nbsp;&nbsp;booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation (ICRA)},<br />&nbsp;&nbsp;year = {2020}<br />}</div>
                     <div class="abstract" id="deng2019selfsupervised_abstract">To teach robots skills, it is crucial to obtain data with supervision. Since annotating real world data is time-consuming and expensive, enabling robots to learn in a self-supervised way is important. In this work, we introduce a robot system for self-supervised 6D object pose estimation. Starting from modules trained in simulation, our system is able to label real world images with accurate 6D object poses for self-supervised learning. In addition, the robot interacts with objects in the environment to change the object configuration by grasping or pushing objects. In this way, our system is able to continuously collect data and improve its pose estimation modules. We show that the self-supervised learning improves object segmentation and 6D pose estimation performance, and consequently enables the system to grasp objects more reliably.</div>
                 </div>
             </div>
         
-
-                  <h3 class="header">Refereed Conference &amp; Journal Publications</h3>
-                  
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/paxton2019logicaldynamicalsystems.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -233,7 +235,7 @@
                     <h5>Probabilistic Multi-Class Segmentation for the Amazon Picking Challenge</h5>
                     <div class="authors">Rico Jonschkowski, <b>Clemens Eppner</b>*, Sebastian Höfer*, Roberto Martín-Martín* and Oliver Brock</div>
                     <div class="booktitle">Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Deajeon, South Korea. October 2016.</div>
-                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('jonschkowski2016probabilistic_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('jonschkowski2016probabilistic_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-IROS.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=Ry6JzeW0HOM">Video</a>] [<a href="http://www.iros2016.org/awards.html">IROS 2016 Best Paper Award Finalists</a>]</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('jonschkowski2016probabilistic_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('jonschkowski2016probabilistic_bibtex'); return false;">BibTex</a>] [<a href="http://www.robotics.tu-berlin.de/fileadmin/fg170/Publikationen_pdf/Jonschkowski-16-IROS.pdf">PDF</a>]  [<a href="https://www.youtube.com/watch?v=Ry6JzeW0HOM">Video</a>] [<a href="http://www.iros2016.org/awards.html">IROS 2016 Best Paper Award Finalist</a>]</div>
                     <div class="bibtex" id="jonschkowski2016probabilistic_bibtex"><br />@inproceedings{jonschkowski2016probabilistic,<br />&nbsp;&nbsp;title = {Probabilistic Multi-Class Segmentation for the Amazon Picking Challenge},<br />&nbsp;&nbsp;author = {Rico Jonschkowski and Clemens Eppner and Sebastian H{\"o}fer and Roberto Mart\'{\i}n-Mart\'{\i}n and Oliver Brock },<br />&nbsp;&nbsp;booktitle = {Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},<br />&nbsp;&nbsp;year = {2016}<br />}</div>
                     <div class="abstract" id="jonschkowski2016probabilistic_abstract">We present a method for multi-class segmentation from RGB-D data in a realistic warehouse picking setting. The method computes pixel-wise probabilities and combines them to find a coherent object segmentation. It reliably segments objects in cluttered scenarios, even when objects are translucent, reflective, highly deformable, have fuzzy surfaces, or consist of loosely coupled components. The robust performance results from the exploitation of problem structure inherent to the warehouse setting. The proposed method proved its capabilities as part of our winning entry to the 2015 Amazon Picking Challenge. We present a detailed experimental analysis of the contribution of different information sources, compare our method to standard segmentation techniques, and assess possible extensions that further enhance the algorithm's capabilities. We release our software and data sets as open source.</div>
                 </div>
