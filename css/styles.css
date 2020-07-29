@@ -26,7 +26,17 @@ a:hover {
     color: #eec643;
     color: #f4da40
 }
-*/
+ */
+
+.authors a {
+    color: #202020;
+    text-decoration: none;
+}
+.authors a:hover {
+    color: #505050;
+    text-decoration: none;
+}
+
 /*
 a {
     text-decoration: none;
