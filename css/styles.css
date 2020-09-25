@@ -16,6 +16,34 @@ footer {
     color: #D3A61F;
 }
 
+/*
+ul {
+  list-style-type: square;
+  margin: 10px 0 0 0;
+}
+*/
+
+.linklist h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 20px;
+}
+.linklist ul {
+  list-style-type: square;
+}
+.linklist li {
+  margin: 0px 0px;
+}
+/*
+.linklist ul li {
+  background-color:yellow;
+  line-height:1em;
+}
+*/
+.linklist ul li li:first-child {
+ margin-top:-10px;
+}
+
 a {
     color: #D3A61F;
 /*    font-weight: 500;*/
