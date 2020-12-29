@@ -89,29 +89,29 @@
                 at <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>'s <a
                     href="http://rll.berkeley.edu/">Robot Learning Lab</a> at UC Berkeley.</p>
             <p style="margin-bottom: 0px;">
-                <a href="https://aemail.com/wp0M">
+                <a href="https://aemail.com/wp0M" aria-label="Email link">
                     <!--a href="https://aemail.com/73pj"-->
                     <i class="fa fa-envelope-square ai-2x"></i>
                 </a>
                 <!--
-		  <a href="https://orcid.org/0000-0002-5398-4037">
+		  <a href="https://orcid.org/0000-0002-5398-4037" aria-label="Orcid link">
 		    <i class="ai ai-orcid-square ai-2x"></i>
 		  </a>
-		  <a href="https://publons.com/researcher/1240466/clemens-eppner/">
+		  <a href="https://publons.com/researcher/1240466/clemens-eppner/" aria-label="Publons link">
 		    <i class="ai ai-publons-square ai-2x"></i>
 		  </a>
 		  -->
-                <a href="https://www.linkedin.com/in/clemens-eppner/">
+                <a href="https://www.linkedin.com/in/clemens-eppner/" aria-label="LinkedIn link">
                     <i class="fa fa-linkedin-square ai-2x"></i>
                 </a>
-                <a href="https://twitter.com/clembow">
+                <a href="https://twitter.com/clembow" aria-label="Twitter link">
                     <i class="fa fa-twitter-square ai-2x"></i>
                 </a>
-		            <a href="https://github.com/clemense">
-            		    <i class="fa fa-github-square ai-2x"></i>
-          		  </a>
+		<a href="https://github.com/clemense" aria-label="Github link">
+            	    <i class="fa fa-github-square ai-2x"></i>
+          	</a>
 
-                <a href="https://scholar.google.com/citations?user=zMw7PF8AAAAJ">
+                <a href="https://scholar.google.com/citations?user=zMw7PF8AAAAJ" aria-label="Google scholar link">
                     <i class="ai ai-fw ai-google-scholar-square ai-2x"></i>
                 </a>
             </p>
@@ -132,7 +132,7 @@
                     <div class="abstract" id="eppner2020acronym_abstract">We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms. Grasp performance improves significantly when compared to the original smaller dataset.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/danielczuk2020rearrangement.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -144,7 +144,7 @@
                     <div class="abstract" id="danielczuk2020rearrangement_abstract">Robotic object rearrangement combines the skills of picking and placing objects. When object models are unavailable, typical collision-checking models may be unable to predict collisions in partial point clouds with occlusions, making generation of collision-free grasping or placement trajectories challenging. We propose a learned collision model that accepts scene and query object point clouds and predicts collisions for 6DOF object poses within the scene. We train the model on a synthetic set of 1 million scene/object point cloud pairs and 2 billion collision queries. We leverage the learned collision model as part of a model predictive path integral (MPPI) policy in a tabletop rearrangement task and show that the policy can plan collision-free grasps and placements for objects unseen in training in both simulated and physical cluttered scenes with a Franka Panda robot. The learned model outperforms both traditional pipelines and learned ablations by 9.8% in accuracy on a dataset of simulated collision queries and is 75x faster than the best-performing baseline.</div>
                 </div>
             </div>
-        
+            
 
         <h3 class="header">Refereed Conference &amp; Journal Publications</h3>
         
@@ -159,7 +159,7 @@
                     <div class="abstract" id="murali2019cluttergrasping_abstract">Grasping in cluttered environments is a fundamental but challenging robotic skill. It requires both reasoning about unseen object parts and potential collisions with the manipulator. Most existing data-driven approaches avoid this problem by limiting themselves to top-down planar grasps which is insufficient for many real-world scenarios and greatly limits possible grasps. We present a method that plans 6-DOF grasps for any desired object in a cluttered scene from partial point cloud observations. Our method achieves a grasp success of 80.3%, outperforming baseline approaches by 17.6% and clearing 9 cluttered table scenes (which contain 23 unknown objects and 51 picks in total) on a real robotic platform. By using our learned collision checking module, we can even reason about effective grasp sequences to retrieve objects that are not immediately accessible.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/deng2019selfsupervised.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -171,7 +171,7 @@
                     <div class="abstract" id="deng2019selfsupervised_abstract">To teach robots skills, it is crucial to obtain data with supervision. Since annotating real world data is time-consuming and expensive, enabling robots to learn in a self-supervised way is important. In this work, we introduce a robot system for self-supervised 6D object pose estimation. Starting from modules trained in simulation, our system is able to label real world images with accurate 6D object poses for self-supervised learning. In addition, the robot interacts with objects in the environment to change the object configuration by grasping or pushing objects. In this way, our system is able to continuously collect data and improve its pose estimation modules. We show that the self-supervised learning improves object segmentation and 6D pose estimation performance, and consequently enables the system to grasp objects more reliably.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/paxton2019logicaldynamicalsystems.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -183,7 +183,7 @@
                     <div class="abstract" id="paxton2019logicaldynamicalsystems_abstract">It is difficult to create robust, reusable, and reactive behaviors for robots that can be easily extended and combined. Frameworks such as Behavior Trees are flexible but difficult to characterize, especially when designing reactions and recovery behaviors to consistently converge to a desired goal condition. We propose a framework which we call Robust Logical-Dynamical Systems (RLDS), which combines the advantages of task representations like behavior trees with theoretical guarantees on performance. RLDS can also be constructed automatically from simple sequential task plans and will still achieve robust, reactive behavior in dynamic real-world environments. In this work, we describe both our proposed framework and a case study on a simple household manipulation task, with examples for how specific pieces can be implemented to achieve robust behavior. Finally, we show how in the context of these manipulation tasks, a combination of an RLDS with planning can achieve better results under adversarial conditions.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2019graspsampling.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -195,7 +195,7 @@
                     <div class="abstract" id="eppner2019graspsampling_abstract">Robot grasping is often formulated as a learning problem. With the increasing speed and quality of physics simulations, generating large-scale grasping data sets that feed learning algorithms is becoming more and more popular. An often overlooked question is how to generate the grasps that make up these data sets. In this paper, we review, classify, and compare different grasp sampling strategies. Our evaluation is based on a fine-grained discretization of SE(3) and uses physics-based simulation to evaluate the quality and robustness of the corresponding parallel-jaw grasps. Specifically, we consider more than 1 billion grasps for each of the 21 objects from the YCB data set. This dense data set lets us evaluate existing sampling schemes w.r.t. their bias and efficiency. Our experiments show that some popular sampling schemes contain significant bias and do not cover all possible ways an object can be grasped.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/mousavian2019graspnet.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -207,7 +207,7 @@
                     <div class="abstract" id="mousavian2019graspnet_abstract">Generating grasp poses is a crucial component for any robot object manipulation task. In this work, we formulate the problem of grasp generation as sampling a set of grasps using a variational autoencoder and assess and refine the sampled grasps using a grasp evaluator model. Both Grasp Sampler and Grasp Refinement networks take 3D point clouds observed by a depth camera as input. We evaluate our approach in simulation and real-world robot experiments. Our approach achieves 88% success rate on various commonly used objects with diverse appearances, scales, and weights. Our model is trained purely in simulation and works in the real world without any extra steps.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/martin2018dataset.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -219,7 +219,7 @@
                     <div class="abstract" id="martin2018dataset_abstract">We present a dataset with models of 14 articulated objects commonly found in human environments and with RGB-D video sequences and wrenches recorded of human interactions with them. The 358 interaction sequences total 67 minutes of human manipulation under varying experimental conditions (type of interaction, lighting, perspective, and background). Each interaction with an object is annotated with the ground-truth poses of its rigid parts and the kinematic state obtained by a motion-capture system. For a subset of 78 sequences (25 minutes), we also measured the interaction wrenches. The object models contain textured three-dimensional triangle meshes of each link and their motion constraints. We provide Python scripts to download and visualize the data. The data are available at https://turbo.github.io/articulated-objects/ and hosted at https://zenodo.org/record/1036660/.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2018physics.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -231,7 +231,7 @@
                     <div class="abstract" id="eppner2018physics_abstract">Interactive perception exploits the correlation between forceful interactions and changes in the observed signals to extract task-relevant information from the sensor stream. Finding the most informative interactions to perceive complex objects, like articulated mechanisms, is challenging because the outcome of the interaction is difficult to predict. We propose a method to select the most informative action while deriving a model of articulated mechanisms that includes kinematic, geometric, and dynamic properties. Our method addresses the complexity of the action selection task based on two insights. First, we show that for a class of interactive perception methods, information gain can be approximated by the amount of motion induced in the mechanism. Second, we resort to physics simulations grounded in the real-world through interactive perception to predict possible action outcomes. Our method enables the robot to autonomously select actions for interactive perception that reveal most information, given the current knowledge ofthe world. This leads to improved perception and more accurate world models, finally enabling robust manipulation.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2017visual.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -243,7 +243,7 @@
                     <div class="abstract" id="eppner2017visual_abstract">Environment-constrained grasping exploits beneficial interactions between hand, object, and environment to increase grasp success. Instead of focusing on the final static relationship between hand posture and object pose, this view of grasping emphasizes the need and the opportunity to select the most appropriate, contact-rich grasping motion, leading up to a final static grasp configuration. This view changes the nature of the underlying planning problem: Instead of planning for static contact points, we need to decide which environmental constraint (EC) to use during the grasping motion. We propose a method to make these decisions based on depth measurements so as to generate robust grasps for a large variety of objects. Our planner exploits the advantages of a soft robot  hand and learns a hand-specific classifier for edge-, surface-, and wall-grasps, each exploiting a different EC. Additionally, we show how the model can continuously be improved in a contextual multi-armed bandit setting without an explicit training and test phase, enabling the continuous improvement of a robot’s grasping skills throughout life time.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/sieverling2017interleaving.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -255,7 +255,7 @@
                     <div class="abstract" id="sieverling2017interleaving_abstract">In this paper we present a planner that interleaves free-space motion with motion in contact to reduce uncertainty. The planner finds such motions by growing a search tree in the combined space of collision-free and contact configurations. The planner reasons  efficiently about the accumulated uncertainty by factoring the state in a belief over configuration and a fully observable contact state. We show the uncertainty-reducing capabilities of the planner on manipulation benchmark from the POMDP literature. The planner scales up to more complex problems like manipulation under uncertainty in seven-dimensional configuration space. We validate our planner in simulation and on a real robot.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/gupta2016learning.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -267,7 +267,7 @@
                     <div class="abstract" id="gupta2016learning_abstract">Dexterous multi-fingered hands can accomplish fine manipulation behaviors that are infeasible with simple robotic grippers. However, sophisticated multi-fingered hands are often expensive and fragile. Low-cost soft hands offer an appealing alternative to more conventional devices, but present considerable challenges in sensing and actuation, making them difficult to apply to more complex manipulation tasks. In this paper, we describe an approach to learning from demonstration that can be used to train soft robotic hands to perform dexterous manipulation tasks. Our method uses object-centric demonstrations, where a human demonstrates the desired motion of manipulated objects with their own hands, and the robot autonomously learns to imitate these demonstrations using reinforcement learning. We propose a novel algorithm that allows us to blend and select a subset of the most feasible demonstrations to learn to imitate on the hardware, which we use with an extension of the guided policy search framework to use multiple demonstrations to learn generalizable neural network policies. We demonstrate our approach on the RBO Hand 2, with learned motor skills for turning a valve, manipulating an abacus, and grasping.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/jonschkowski2016probabilistic.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -279,7 +279,7 @@
                     <div class="abstract" id="jonschkowski2016probabilistic_abstract">We present a method for multi-class segmentation from RGB-D data in a realistic warehouse picking setting. The method computes pixel-wise probabilities and combines them to find a coherent object segmentation. It reliably segments objects in cluttered scenarios, even when objects are translucent, reflective, highly deformable, have fuzzy surfaces, or consist of loosely coupled components. The robust performance results from the exploitation of problem structure inherent to the warehouse setting. The proposed method proved its capabilities as part of our winning entry to the 2015 Amazon Picking Challenge. We present a detailed experimental analysis of the contribution of different information sources, compare our method to standard segmentation techniques, and assess possible extensions that further enhance the algorithm's capabilities. We release our software and data sets as open source.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2016lessons.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -291,7 +291,7 @@
                     <div class="abstract" id="eppner2016lessons_abstract">We describe the winning entry to the Amazon Picking Challenge. From the experience of building this system and competing in the Amazon Picking Challenge, we derive several conclusions: 1) We suggest to characterize robotic systems building along four key aspects, each of them spanning a spectrum of solutions: modularity vs. integration, generality vs. assumptions, computation vs. embodiment, and planning vs. feedback. 2) To understand which region of each spectrum most adequately addresses which robotic problem, we must explore the full spectrum of possible approaches. To achieve this, our community should agree on key aspects that characterize the solution space of robotic systems. 3) For manipulation problems in unstructured environments, certain regions of each spectrum match the problem most adequately, and should be exploited further. This is supported by the fact that our solution deviated from the majority of the other challenge entries along each of the spectra.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/mordatch2016combining.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -303,7 +303,7 @@
                     <div class="abstract" id="mordatch2016combining_abstract">We present an automatic method for interactive control of physical humanoid robots based on high-level tasks that does not require manual specification of motion trajectories or specially-designed control policies. The method is based on the combination of a model-based policy that is trained off-line in simulation and sends high-level commands to a model-free controller that executes these commands on the physical robot. This low-level controller simultaneously learns and adapts a local model of dynamics on-line and computes optimal controls under the learned model. The high-level policy is trained using a combination of trajectory optimization and neural network learning, while considering physical limitations such as limited sensors and communication delays. The entire system runs in real-time on the robot's computer and uses only on-board sensors. We demonstrate successful policy execution on a range of tasks such as leaning, hand reaching, and robust balancing behaviors atop a tilting base on the physical robot and in simulation.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2015planning.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -315,7 +315,7 @@
                     <div class="abstract" id="eppner2015planning_abstract">There is strong evidence that robustness in human and robotic grasping can be achieved through the deliberate exploitation of contact with the environment. In contrast to this, traditional grasp planners generally disregard the opportunity to interact with the environment during grasping. In this paper, we propose a novel view of grasp planning that centers on the exploitation of environmental contact. In this view, grasps are sequences of constraint exploitations, i.e. consecutive motions constrained by features in the environment, ending in a grasp. To be able to generate such grasp plans, it becomes necessary to consider planning, perception, and control as tightly integrated components. As a result, each of these components can be simplified while still yielding reliable grasping performance. We propose a first implementation of a grasp planner based on this view and demonstrate in real-world experiments the robustness and versatility of the resulting grasp plans.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/heinemann2015taxonomy.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -327,7 +327,7 @@
                     <div class="abstract" id="heinemann2015taxonomy_abstract">As a first step towards transferring human grasping capabilities to robots, we analyzed the grasping behavior of human subjects. We derived a taxonomy in order to adequately represent the observed strategies. During the analysis of the recorded data, this classification scheme helped us to obtain a better understanding of human grasping behavior. We will provide support for our hypothesis that humans exploit compliant contact between the hand and the environment to compensate for uncertainty. We will also show a realization of the resulting grasping strategies on a real robot. It is our belief that the detailed analysis of human grasping behavior will ultimately lead to significant increases in robot manipulation and dexterity.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2015exploitation.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -339,7 +339,7 @@
                     <div class="abstract" id="eppner2015exploitation_abstract">We investigate the premise that robust grasping performance is enabled by exploiting constraints present in the environment. These constraints, leveraged through motion in contact, counteract uncertainty in state variables relevant to grasp success. Given this premise, grasping becomes a process of successive exploitation of environmental constraints, until a successful grasp has been established. We present support for this view found through the analysis of human grasp behavior and by showing robust robotic grasping based on constraint-exploiting grasp strategies. Furthermore, we show that it is possible to design robotic hands with inherent capabilities for the exploitation of environmental constraints.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/deimel2013exploitation.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -351,7 +351,7 @@
                     <div class="abstract" id="deimel2013exploitation_abstract">We investigate the premise that robust grasping performance is enabled by exploiting constraints present in the environment. These constraints, leveraged through motion in contact, counteract uncertainty in state variables relevant to grasp success. Given this premise, grasping becomes a process of successive exploitation of environmental constraints, until a successful grasp has been established. We present support for this view by analyzing human grasp behavior and by showing robust robotic grasping based on constraint-exploiting grasp strategies. Furthermore, we show that it is possible to design robotic hands with inherent capabilities for the exploitation of environmental constraints.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2013grasping.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -363,7 +363,7 @@
                     <div class="abstract" id="eppner2013grasping_abstract">In grasping, shape adaptation between hand and object has a major influence on grasp success. In this paper, we present an approach to grasping unknown objects that explicitly considers the effect of shape adaptability to simplify perception. Shape adaptation also occurs between the hand and the environment, for example, when fingers slide across the surface of the table to pick up a small object. Our approach to grasping also considers environmental shape adaptability to select grasps with high probability of success. We validate the proposed shape-adaptability-aware grasping approach in 880 real-world grasping trials with 30 objects. Our experiments show that the explicit consideration of shape adaptability of the hand leads to robust grasping of unknown objects. Simple perception suffices to achieve this robust grasping behavior.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/faber2009humanoid.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -375,7 +375,7 @@
                     <div class="abstract" id="faber2009humanoid_abstract">Wheeled tour guide robots have already been deployed in various museums or fairs worldwide. A key requirement for successful tour guide robots is to interact with people and to entertain them. Most of the previous tour guide robots, however, focused more on the involved navigation task than on natural interaction with humans. Humanoid robots, on the other hand, offer a great potential for investigating intuitive, multimodal interaction between humans and machines. In this paper, we present our mobile full-body humanoid tour guide robot Robotinho. We provide mechanical and electrical details and cover perception, the integration of multiple modalities for interaction, navigation control, and system integration aspects. The multimodal interaction capabilities of Robotinho have been designed and enhanced according to the questionnaires filled out by the people who interacted with the robot at previous public demonstrations. We present experiences we have made during experiments in which untrained users interacted with the robot.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2009imitation.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -387,7 +387,7 @@
                     <div class="abstract" id="eppner2009imitation_abstract">In this paper, we present an approach that allows a robot to observe, generalize, and reproduce tasks observed from multiple demonstrations. Motion capture data is recorded in which a human instructor manipulates a set of objects. In our approach, we learn relations between body parts of the demonstrator and objects in the scene. These relations result in a generalized task description. The problem of learning and reproducing human actions is formulated using a dynamic Bayesian network (DBN). The posteriors corresponding to the nodes of the DBN are estimated by observing objects in the scene and body parts of the demonstrator. To reproduce a task, we seek for the maximum-likelihood action sequence according to the DBN. We additionally show how further constraints can be incorporated online, for example, to robustly deal with unforeseen obstacles. Experiments carried out with a real 6-DoF robotic manipulator as well as in simulation show that our approach enables a robot to reproduce a task carried out by a human demonstrator. Our approach yields a high degree of generalization illustrated by performing a pick-and-place and a whiteboard cleaning task.</div>
                 </div>
             </div>
-        
+            
 
         <h3 class="header">Theses</h3>
         
@@ -404,7 +404,7 @@ In this thesis, we exploit two general properties to devise grasp planning algor
 We study the two ideas by focusing on the relationships between the three main constituents of the grasping problem: hand, object, and environment. We show that the interactions between adaptable hands and objects lend themselves to low-dimensional grasp actions. Based on this insight, we devise two grasp planning algorithms which map compliance modes to raw sensor signals using minimal prior knowledge. Next, we focus on the interactions between hand and environment. We show that contacting the environment can improve success in motion and grasping tasks. We conclude our investigations by considering interactions between all three factors: hand, object, and environment. We extend our grasping approach to select the most appropriate environmental constraint exploitation based on the shape of an object. Finally, we consider simple manipulation tasks that require individual finger movements. Although compliant hands pose challenges due to the difficulty in modeling and limitations in sensing, we propose an approach to learn feedback control strategies that solve these tasks. We evaluate all algorithms presented in this thesis in extensive real-world experiments, compare their assumptions and discuss limitations. The investigations and planning algorithms show that exploiting compliance in hands and stiffness in the environment leads to improved grasp performance.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2008thesis.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -416,7 +416,7 @@ We study the two ideas by focusing on the relationships between the three main c
                     <div class="abstract" id="eppner2008thesis_abstract">In this thesis, we present an approach that allows a robot to observe, generalize, and reproduce tasks observed from multiple demonstrations. Motion capture data is recorded in which a human instructor manipulates a set of objects. In our approach, we learn relations between body parts of the demonstrator and objects in the scene. These relations result in a generalized task description. The problem of learning and reproducing human actions is formulated using a dynamic Bayesian network (DBN). The posteriors corresponding to the nodes of the DBN are estimated by observing objects in the scene and body parts of the demonstrator. To reproduce a task, we seek for the maximum-likelihood action sequence according to the DBN. We additionally show how further constraints can be incorporated online, for example, to robustly deal with unforeseen obstacles. Experiments carried out with a real 6-DoF robotic manipulator as well as in simulation show that our approach enables a robot to reproduce a task carried out by a human demonstrator. Our approach yields a high degree of generalization illustrated by performing a pick-and-place, a pouring, and a whiteboard cleaning task.</div>
                 </div>
             </div>
-        
+            
             <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2007thesis.png" width="100" alt="" /></div>
                 <div class="col-rest">
@@ -428,12 +428,19 @@ We study the two ideas by focusing on the relationships between the three main c
                     <div class="abstract" id="eppner2007thesis_abstract"></div>
                 </div>
             </div>
-        
+            
 
-        <!--
-                  <h3 class="header">Patents</h3>
-                  
-                  -->
+        <h3 class="header">Patents</h3>
+        
+            <div class="publication">
+                <div class="col-image"><img src="thumbnails/mousavian2020grasp.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Grasp generation using a variational autoencoder</h5>
+                    <div class="authors"><a href="https://cs.gmu.edu/~amousavi/">Arsalan Mousavian</a>, <b>Clemens Eppner</b> and <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a></div>
+                    <div class="booktitle">US20200361083A1. United States. November 2020.</div>
+                </div>
+            </div>
+            
     </section>
 
     <section class="container linklist">
