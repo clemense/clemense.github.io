@@ -122,6 +122,18 @@
         <h3 class="header">Preprints</h3>
         
             <div class="publication">
+                <div class="col-image"><img src="thumbnails/islam2020alternative.png" width="100" alt="" /></div>
+                <div class="col-rest">
+                    <h5>Alternative Paths Planner (APP) for Provably Fixed-time Manipulation Planning in Semi-structured Environments</h5>
+                    <div class="authors"><a href="http://www.ri.cmu.edu/person.html?person_id=3176">Fahad Islam</a>, <a href="https://cpaxton.github.io/">Christopher Paxton</a>, <b>Clemens Eppner</b>, <a href="http://www.gnarlydesign.io/">Bryan Peele</a>, <a href="https://www.cs.cmu.edu/~maxim/">Maxim Likhachev</a> and <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a></div>
+                    <div class="booktitle"> December 2020.</div>
+                    <div>[<a href="#" title="Show Abstract" onclick="javascript:togglediv('islam2020alternative_abstract'); return false;">Abstract</a>] [<a title="Show BibTex" href="#" onclick="javascript:togglediv('islam2020alternative_bibtex'); return false;">BibTex</a>] [<a href="https://arxiv.org/pdf/2012.14970">PDF</a>] </div>
+                    <div class="bibtex" id="islam2020alternative_bibtex"><br />@unpublished{islam2020alternative,<br />&nbsp;&nbsp;title = {Alternative Paths Planner (APP) for Provably Fixed-time Manipulation Planning in Semi-structured Environments},<br />&nbsp;&nbsp;author = {Islam, Fahad and Paxton, Christopher and Eppner, Clemens and Peele, Bryan and Likhachev, Maxim and Fox, Dieter},<br />&nbsp;&nbsp;year = {2020}<br />}</div>
+                    <div class="abstract" id="islam2020alternative_abstract">In many applications, including logistics and manufacturing, robot manipulators operate in semi-structured environments alongside humans or other robots. These environments are largely static, but they may contain some movable obstacles that the robot must avoid. Manipulation tasks in these applications are often highly repetitive, but require fast and reliable motion planning capabilities, often under strict time constraints. Existing preprocessing-based approaches are beneficial when the environments are highly-structured, but their performance degrades in the presence of movable obstacles, since these are not modelled a priori. We propose a novel preprocessing-based method called Alternative Paths Planner (APP) that provides provably fixed-time planning guarantees in semi-structured environments. APP plans a set of alternative paths offline such that, for any configuration of the movable obstacles, at least one of the paths from this set is collision-free. During online execution, a collision-free path can be looked up efficiently within a few microseconds. We evaluate APP on a 7 DoF robot arm in semi-structured domains of varying complexity and demonstrate that APP is several orders of magnitude faster than state-of-the-art motion planners for each domain. We further validate this approach with real-time experiments on a robotic manipulator.</div>
+                </div>
+            </div>
+            
+            <div class="publication">
                 <div class="col-image"><img src="thumbnails/eppner2020acronym.png" width="100" alt="" /></div>
                 <div class="col-rest">
                     <h5>ACRONYM: A Large-Scale Grasp Dataset Based on Simulation</h5>
@@ -696,7 +708,7 @@ We study the two ideas by focusing on the relationships between the three main c
     </section>
 
 
-    <footer>&copy; 2019-2020 Clemens Eppner. <a
+    <footer>&copy; 2019-2021 Clemens Eppner. <a
             href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC-NC-SA-4.0</a>. Built with <a
             href="https://github.com/sciunto-org/python-bibtexparser">python-bibtexparser</a> and <a
             href="https://kbrsh.github.io/wing">Wing</a>.</footer>
